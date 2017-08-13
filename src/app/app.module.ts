@@ -4,7 +4,12 @@ import { NgModule } from '@angular/core';
 // import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MdCardModule } from '@angular/material';
+
+import { FormsModule } from '@angular/forms';
 import { MdButtonModule, MdCheckboxModule } from '@angular/material';
+import { MdInputModule } from '@angular/material';
+import { MdSelectModule } from '@angular/material';
 
 import 'hammerjs';
 
@@ -19,8 +24,12 @@ import { AppComponent } from './app.component';
     // NoopAnimationsModule,
     BrowserAnimationsModule,
     // component modules
+    MdCardModule,
+    FormsModule,
     MdButtonModule,
-    MdCheckboxModule
+    MdCheckboxModule,
+    MdInputModule,
+    MdSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
