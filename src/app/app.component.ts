@@ -23,4 +23,7 @@ export class AppComponent {
     { value: 8, viewValue: '0.01 BTC' }
   ];
 
+  // Inject HttpClient into your component or service.
+  // constructor(private http: HttpClient) {}
+  
 }
