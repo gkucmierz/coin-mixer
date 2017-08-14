@@ -14,8 +14,8 @@ export class AppComponent {
   selectedValue: number;
 
   amounts = [
-    // { value: 0, viewValue: '5 BTC' },
-    // { value: 1, viewValue: '2 BTC' },
+    { value: 0, viewValue: '5 BTC' },
+    { value: 1, viewValue: '2 BTC' },
     { value: 2, viewValue: '1 BTC' },
     { value: 3, viewValue: '0.5 BTC' },
     { value: 4, viewValue: '0.2 BTC' },
