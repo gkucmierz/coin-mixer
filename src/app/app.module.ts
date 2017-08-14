@@ -14,6 +14,8 @@ import { MdSelectModule } from '@angular/material';
 
 import 'hammerjs';
 
+import { DataService } from './services/data.service';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -33,7 +35,9 @@ import { AppComponent } from './app.component';
     MdInputModule,
     MdSelectModule
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

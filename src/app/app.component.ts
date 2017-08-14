@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { DataService } from './services/data.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,7 +25,13 @@ export class AppComponent {
     { value: 8, viewValue: '0.01 BTC' }
   ];
 
-  // Inject HttpClient into your component or service.
-  // constructor(private http: HttpClient) {}
-  
+  constructor (private data: DataService) {}
+
+  next() {
+    this.data.get('http://localhost:8080')
+      .subscribe(data => {
+        console.log(data);
+      });
+  }
+
 }
