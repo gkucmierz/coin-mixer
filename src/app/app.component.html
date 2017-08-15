@@ -1,31 +1,19 @@
 
 <md-card>
-
   <md-card-title>
-    Mix coins
+    menu
   </md-card-title>
 
   <md-card-content>
-
-    <md-select placeholder="Select amount" [(ngModel)]="selectedValue">
-      <md-option *ngFor="let amount of amounts" [value]="amount.value">
-        {{ amount.viewValue }}
-      </md-option>
-    </md-select>
-    
-    <md-input-container>
-      <input mdInput [(ngModel)]="address" placeholder="Address">
-    </md-input-container>
-
+    <ul>
+      <li>
+        <a routerLink="/">Startup</a>
+      </li>
+      <li>
+        <a routerLink="/finalize">Finalize</a>
+      </li>
+    </ul>
   </md-card-content>
-
-  <md-card-actions>
-    <button md-raised-button color="warn">
-      Reset
-    </button>
-    <button md-raised-button color="primary" (click)="next()">
-      Next
-    </button>
-  </md-card-actions>
-
 </md-card>
+
+<router-outlet></router-outlet>
